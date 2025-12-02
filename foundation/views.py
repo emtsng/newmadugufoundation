@@ -86,16 +86,6 @@ def pricing(request):
     return render(request, 'pricing.html')
 
 
-def index_2(request):
-    """Home page 2 view"""
-    return render(request, 'index-2.html')
-
-
-def index_3(request):
-    """Home page 3 view"""
-    return render(request, 'index-3.html')
-
-
 def blog_2(request):
     """Blog page 2 view"""
     return render(request, 'blog-2.html')
