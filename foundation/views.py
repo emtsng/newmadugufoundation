@@ -86,11 +86,6 @@ def pricing(request):
     return render(request, 'pricing.html')
 
 
-def blog_2(request):
-    """Blog page 2 view"""
-    return render(request, 'blog-2.html')
-
-
 def page_not_found(request, exception):
     """404 page view"""
     return render(request, '404.html', status=404)

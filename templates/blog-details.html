@@ -83,55 +83,29 @@
                     <div class="to-go-to-sidebar-in-mobile">
                         <nav class="ul-header-nav">
                             <a href="{% url 'index' %}">Home</a>
-                            <a href="{% url 'about' %}">About</a>
                             <div class="has-sub-menu">
-                                <a role="button">Pages</a>
+                                <a role="button">About Us</a>
 
                                 <div class="ul-header-submenu">
                                     <ul>
+                                        <li><a href="{% url 'about' %}">About</a></li>
                                         <li><a href="{% url 'services' %}">Services</a></li>
-                                        <li><a href="{% url 'service-details' %}">Service Details</a></li>
-                                        <li><a href="{% url 'projects' %}">Projects</a></li>
-                                        <li><a href="{% url 'project-details' %}">Project Details</a></li>
                                         <li><a href="{% url 'team' %}">Team</a></li>
-                                        <li><a href="{% url 'team-details' %}">Team Member Details</a></li>
-                                        <li><a href="{% url 'pricing' %}">Pricing Plans</a></li>
                                         <li><a href="{% url 'faq' %}">FAQs</a></li>
-                                        <li><a href="{% url 'index' %}">404</a></li>
                                     </ul>
                                 </div>
                             </div>
+                            <a href="{% url 'projects' %}">Projects</a>
+
+                            <a href="{% url 'donations' %}">Donation</a>
 
                             <div class="has-sub-menu">
-                                <a role="button">Donation</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="{% url 'donations' %}">Donation Listing</a></li>
-                                        <li><a href="{% url 'donation-details' %}">Donation Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="has-sub-menu">
-                                <a role="button">Event</a>
+                                <a role="button">Events</a>
 
                                 <div class="ul-header-submenu">
                                     <ul>
                                         <li><a href="{% url 'events' %}">Events</a></li>
-                                        <li><a href="{% url 'event-details' %}">Event Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="has-sub-menu">
-                                <a role="button">Blog</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="{% url 'blog' %}">Blogs</a></li>
-                                        <li><a href="{% url 'blog-2' %}">Blogs Layout 2</a></li>
-                                        <li><a href="{% url 'blog-details' %}">Blog Details</a></li>
+                                        <li><a href="{% url 'blog' %}">Blog</a></li>
                                     </ul>
                                 </div>
                             </div>
