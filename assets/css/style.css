@@ -49,11 +49,11 @@ CSS INDEX
 :root {
   --black: #000;
   --white: #fff;
-  --ul-primary: #EB5310;
-  --ul-secondary: #FAA019;
+  --ul-primary: #e5881d;
+  --ul-secondary: #138d45;
   --ul-c3: #FFE9C8;
   --ul-c4: #FFF9F4;
-  --ul-c5: #FC791A;
+  --ul-c5: #e7791a;
   --ul-black: #1E252F;
   --ul-p: #434343;
   --ul-gray: #434343;
@@ -3542,7 +3542,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 87, 40, 0.9);
+  background: rgba(231, 121, 26, 0.9);
   z-index: -1;
 }
 .ul-volunteer-block .ul-btn {

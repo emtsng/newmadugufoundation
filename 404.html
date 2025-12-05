@@ -2,24 +2,23 @@
 <html lang="en">
 
 
-<!-- Mirrored from charitics.temptics.com/project-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Dec 2025 09:51:47 GMT -->
+<!-- Mirrored from charitics.temptics.com/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Dec 2025 09:51:54 GMT -->
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madugu Jaji Sambo Foundation</title>
+    <title>Charitics - NGO & Non Profit HTML Template</title>
 
     <!-- libraries CSS -->
-    <link rel="stylesheet" href="{% static 'assets/icon/flaticon_charitics.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/splide/splide.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/slim-select/slimselect.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/animate-wow/animate.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/flatpickr/flatpickr.min.css' %}">
+    <link rel="stylesheet" href="assets/icon/flaticon_charitics.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/flatpickr/flatpickr.min.css">
 
     <!-- custom CSS -->
-    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -32,8 +31,8 @@
         <!-- header -->
         <div class="ul-sidebar-header">
             <div class="ul-sidebar-header-logo">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'assets/img/logo.svg' %}" alt="logo" class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="logo" class="logo">
                 </a>
             </div>
             <!-- sidebar closer -->
@@ -75,41 +74,76 @@
         <div class="ul-header-bottom to-be-sticky">
             <div class="ul-header-bottom-wrapper ul-header-container">
                 <div class="logo-container">
-                    <a href="{% url 'index' %}" class="d-inline-block"><img src="{% static 'assets/img/logo.svg' %}" alt="logo" class="logo"></a>
+                    <a href="index.html" class="d-inline-block"><img src="assets/img/logo.svg" alt="logo" class="logo"></a>
                 </div>
 
                 <!-- header nav -->
                 <div class="ul-header-nav-wrapper">
                     <div class="to-go-to-sidebar-in-mobile">
                         <nav class="ul-header-nav">
-                            <a href="{% url 'index' %}">Home</a>
                             <div class="has-sub-menu">
-                                <a role="button">About Us</a>
+                                <a role="button">Home</a>
 
                                 <div class="ul-header-submenu">
                                     <ul>
-                                        <li><a href="{% url 'about' %}">About</a></li>
-                                        <li><a href="{% url 'services' %}">Services</a></li>
-                                        <li><a href="{% url 'team' %}">Team</a></li>
-                                        <li><a href="{% url 'faq' %}">FAQs</a></li>
+                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="index-2.html">Home 2</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <a href="{% url 'projects' %}">Projects</a>
-
-                            <a href="{% url 'donations' %}">Donation</a>
-
+                            <a href="about.html">About</a>
                             <div class="has-sub-menu">
-                                <a role="button">Events</a>
+                                <a role="button">Pages</a>
 
                                 <div class="ul-header-submenu">
                                     <ul>
-                                        <li><a href="{% url 'events' %}">Events</a></li>
-                                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="project-details.html">Project Details</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="team-details.html">Team Member Details</a></li>
+                                        <li><a href="pricing.html">Pricing Plans</a></li>
+                                        <li><a href="faq.html">FAQs</a></li>
+                                        <li><a href="404.html">404</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <a href="{% url 'contact' %}">Contact</a>
+
+                            <div class="has-sub-menu">
+                                <a role="button">Donation</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="donations.html">Donation Listing</a></li>
+                                        <li><a href="donation-details.html">Donation Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="has-sub-menu">
+                                <a role="button">Event</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="events.html">Events</a></li>
+                                        <li><a href="event-details.html">Event Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="has-sub-menu">
+                                <a role="button">Blog</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="blog.html">Blogs</a></li>
+                                        <li><a href="blog-2.html">Blogs Layout 2</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="contact.html">Contact</a>
                         </nav>
                     </div>
                 </div>
@@ -117,7 +151,7 @@
                 <!-- actions -->
                 <div class="ul-header-actions">
                     <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
-                    <a href="{% url 'contact' %}" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Join With us </a>
+                    <a href="contact.html" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Join With us </a>
                     <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
                 </div>
             </div>
@@ -126,92 +160,31 @@
     <!-- HEADER SECTION END -->
 
 
-    <main class="overflow-hidden">
+    <main>
         <!-- BREADCRUMBS SECTION START -->
         <section class="ul-breadcrumb ul-section-spacing">
             <div class="ul-container">
-                <h2 class="ul-breadcrumb-title">Project Details</h2>
+                <h2 class="ul-breadcrumb-title">Error</h2>
                 <ul class="ul-breadcrumb-nav">
-                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><span class="separator"><i class="flaticon-right"></i></span></li>
-                    <li>Project Details</li>
+                    <li>Error</li>
                 </ul>
             </div>
         </section>
         <!-- BREADCRUMBS SECTION END -->
 
 
-        <div class="ul-container ul-section-spacing">
-            <div class="ul-project-details-img-slider swiper">
-                <div class="swiper-wrapper">
-                    <!-- single slide -->
-                    <div class="swiper-slide">
-                        <div>
-                            <img src="{% static 'assets/img/project-details-img-1.jpg' %}" alt="Image">
-                        </div>
-                    </div>
-                    <!-- single slide -->
-                    <div class="swiper-slide">
-                        <div>
-                            <img src="{% static 'assets/img/project-details-img-1.jpg' %}" alt="Image">
-                        </div>
-                    </div>
-                    <!-- single slide -->
-                    <div class="swiper-slide">
-                        <div>
-                            <img src="{% static 'assets/img/project-details-img-1.jpg' %}" alt="Image">
-                        </div>
-                    </div>
+        <section class="ul-404 ul-section-spacing text-center">
+            <div class="ul-404-container">
+                <div class="ul-404-img">
+                    <img src="assets/img/404-img.png" alt="Image">
                 </div>
-
-                <div class="ul-project-details-slider-nav ul-slider-nav">
-                    <button class="prev"><i class="flaticon-back"></i></button>
-                    <button class="next"><i class="flaticon-next"></i></button>
-                </div>
+                <h2 class="ul-section-title">Oops! Somethings Went Wrong Please Try Again Later</h2>
+                <p>Sorry about that, but the page you looking is not available now</p>
+                <a href="index.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Back to Home</a>
             </div>
-
-            <div class="row gx-5 gy-4 flex-column-reverse flex-lg-row">
-                <!-- event details content -->
-                <div class="col-md-8">
-                    <div class="ul-event-details">
-                        <h2 class="ul-event-details-title">Child trouble & care</h2>
-                        <p class="ul-event-details-descr">Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget potenti vestibulum is cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus.Lectus ve pellentesque a cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit mauris ad to elementum fringilla facilisi volutpat fusce pharetra.</p>
-                        <p>Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget potenti vestibulum is cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus.Lectus ve pellentesque a cras posuere tempor facilisi habitant lectus rutrum pede . Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget potenti vestibulum is cras.</p>
-                        <h3 class="ul-event-details-inner-title">Challenge & Solution </h3>
-                        <p class="ul-event-details-descr">Future, as it seeks to lead the industry in technological innovation and sustainable building practices to deliver long-lasting value for its clients. Netus lorem rutrum arcu dignissim at sit morbi nascetur eget potenti vestibulum is cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus.Lepellentesque a cras posuere tempor facilisi habitant lectus rutrum pede .</p>
-
-                        <h3 class="ul-event-inner-title">Final Result</h3>
-                        <p>For almost 50 years Leighton Asia, one of the region’s largest and most respected construc companies, has been progressively building for a better future by leveraging international expertise with local intelligence. In that time Leighton./p>
-                    </div>
-                </div>
-
-                <!-- sidebar -->
-                <div class="col-md-4">
-                    <div class="ul-project-details-infos">
-                        <h4 class="ul-project-details-infos-title">Project Information</h4>
-                        <ul class="ul-project-details-infos-list">
-                            <li><span class="key">CATEGORY</span>:<span class="value">Business, Marketing</span></li>
-                            <li><span class="key">AUTHOR</span>:<span class="value">Athena Jones</span></li>
-                            <li><span class="key">TAGS</span>:<span class="value">Data Masters</span></li>
-                            <li><span class="key">COST</span>:<span class="value">USD 1,50,499</span></li>
-                            <li><span class="key">DATE</span>:<span class="value">25 February, 2024</span></li>
-                        </ul>
-
-                        <div class="ul-footer-socials ul-project-details-infos-shares">
-                            <a href="#"><i class="flaticon-facebook"></i></a>
-                            <a href="#"><i class="flaticon-twitter"></i></a>
-                            <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
-                            <a href="#"><i class="flaticon-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ul-project-details-nav">
-                <a href="#"><i class="flaticon-back"></i> <span>Previous Project</span></a>
-                <a href="#"><i class="flaticon-next"></i> <span>Next Project</span></a>
-            </div>
-        </div>
+        </section>
     </main>
 
 
@@ -272,7 +245,7 @@
             <div class="ul-footer-container">
                 <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
                     <div class="ul-footer-about">
-                        <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo-white.svg' %}" alt="logo" class="logo"></a>
+                        <a href="index.html"><img src="assets/img/logo-white.svg" alt="logo" class="logo"></a>
                         <p class="ul-footer-about-txt">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
                         <div class="ul-footer-socials">
                             <a href="#"><i class="flaticon-facebook"></i></a>
@@ -286,11 +259,11 @@
                         <h3 class="ul-footer-widget-title">Quick Links</h3>
 
                         <div class="ul-footer-widget-links">
-                            <a href="{% url 'about' %}">About Us</a>
-                            <a href="{% url 'services' %}">Our Services</a>
-                            <a href="{% url 'blog' %}">Our Blogs</a>
-                            <a href="{% url 'faq' %}">FAQ’S</a>
-                            <a href="{% url 'contact' %}">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                            <a href="services.html">Our Services</a>
+                            <a href="blog.html">Our Blogs</a>
+                            <a href="faq.html">FAQ’S</a>
+                            <a href="contact.html">Contact Us</a>
                         </div>
                     </div>
 
@@ -301,7 +274,7 @@
                             <!-- single post -->
                             <div class="ul-blog-sidebar-post ul-footer-post">
                                 <div class="img">
-                                    <img src="{% static 'assets/img/blog-2.jpg' %}" alt="Post Image">
+                                    <img src="assets/img/blog-2.jpg" alt="Post Image">
                                 </div>
 
                                 <div class="txt">
@@ -310,14 +283,14 @@
                                         <span>May 12, 2025</span>
                                     </span>
 
-                                    <h4 class="title"><a href="{% url 'blog-details' %}">There are many vario ns of passages of</a></h4>
+                                    <h4 class="title"><a href="blog-details.html">There are many vario ns of passages of</a></h4>
                                 </div>
                             </div>
 
                             <!-- single post -->
                             <div class="ul-blog-sidebar-post ul-footer-post">
                                 <div class="img">
-                                    <img src="{% static 'assets/img/blog-1.jpg' %}" alt="Post Image">
+                                    <img src="assets/img/blog-1.jpg" alt="Post Image">
                                 </div>
 
                                 <div class="txt">
@@ -326,7 +299,7 @@
                                         <span>May 12, 2025</span>
                                     </span>
 
-                                    <h4 class="title"><a href="{% url 'blog-details' %}">There are many vario ns of passages of</a></h4>
+                                    <h4 class="title"><a href="blog-details.html">There are many vario ns of passages of</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -371,31 +344,31 @@
 
         <!-- vector -->
         <div class="ul-footer-vectors">
-            <img src="{% static 'assets/img/footer-vector-img.png' %}" alt="Footer Image" class="ul-footer-vector-1">
+            <img src="assets/img/footer-vector-img.png" alt="Footer Image" class="ul-footer-vector-1">
         </div>
     </footer>
     <!-- FOOTER SECTION END -->
 
     <!-- libraries JS -->
-    <script src="{% static 'assets/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/splide/splide.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/splide/splide-extension-auto-scroll.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/slim-select/slimselect.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/animate-wow/wow.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/splittype/index.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/mixitup/mixitup.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/fslightbox/fslightbox.js' %}"></script>
-    <script src="{% static 'assets/vendor/flatpickr/flatpickr.js' %}"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/flatpickr/flatpickr.js"></script>
 
     <!-- custom JS -->
-    <script src="{% static 'assets/js/main.js' %}"></script>
-    <script src="{% static 'assets/js/tab.js' %}"></script>
-    <!-- <script src="{% static 'assets/js/countdown.js' %}"></script> -->
-    <script src="{% static 'assets/js/accordion.js' %}"></script>
-    <script src="{% static 'assets/js/progressbar.js' %}"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tab.js"></script>
+    <!-- <script src="assets/js/countdown.js"></script> -->
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/progressbar.js"></script>
 </body>
 
 
-<!-- Mirrored from charitics.temptics.com/project-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Dec 2025 09:51:49 GMT -->
+<!-- Mirrored from charitics.temptics.com/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Dec 2025 09:51:55 GMT -->
 </html>

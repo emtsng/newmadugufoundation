@@ -4,22 +4,21 @@
 
 <!-- Mirrored from charitics.temptics.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Dec 2025 09:51:20 GMT -->
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madugu Jaji Sambo Foundation</title>
+    <title>Charitics - NGO & Non Profit HTML Template</title>
 
     <!-- libraries CSS -->
-    <link rel="stylesheet" href="{% static 'assets/icon/flaticon_charitics.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/splide/splide.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/slim-select/slimselect.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/animate-wow/animate.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/flatpickr/flatpickr.min.css' %}">
+    <link rel="stylesheet" href="assets/icon/flaticon_charitics.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/flatpickr/flatpickr.min.css">
 
     <!-- custom CSS -->
-    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -32,8 +31,8 @@
         <!-- header -->
         <div class="ul-sidebar-header">
             <div class="ul-sidebar-header-logo">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'assets/img/logo.svg' %}" alt="logo" class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="logo" class="logo">
                 </a>
             </div>
             <!-- sidebar closer -->
@@ -71,45 +70,48 @@
     <!-- SEARCH MODAL SECTION END -->
 
     <!-- HEADER SECTION START -->
-    <header class="ul-header">
+    <header class="ul-header ul-header-2">
         <div class="ul-header-bottom to-be-sticky">
             <div class="ul-header-bottom-wrapper ul-header-container">
                 <div class="logo-container">
-                    <a href="{% url 'index' %}" class="d-inline-block"><img src="{% static 'assets/img/logo.svg' %}" alt="logo" class="logo"></a>
+                    <a href="index.html" class="d-inline-block"><img src="assets/img/logo.webp" alt="logo" class="logo"></a>
                 </div>
 
                 <!-- header nav -->
                 <div class="ul-header-nav-wrapper">
                     <div class="to-go-to-sidebar-in-mobile">
                         <nav class="ul-header-nav">
-                            <a href="{% url 'index' %}">Home</a>
+                            <a href="index.html" class="active">Home</a>
+                            
+                            <a href="about.html">About Us</a>
+                            
                             <div class="has-sub-menu">
-                                <a role="button">About Us</a>
-
+                                <a role="button">Our Programs <i class="fas fa-chevron-down"></i></a>
                                 <div class="ul-header-submenu">
                                     <ul>
-                                        <li><a href="{% url 'about' %}">About</a></li>
-                                        <li><a href="{% url 'services' %}">Services</a></li>
-                                        <li><a href="{% url 'team' %}">Team</a></li>
-                                        <li><a href="{% url 'faq' %}">FAQs</a></li>
+                                        <li><a href="programs/orphan-education.html">Orphan Education</a></li>
+                                        <li><a href="programs/prison-decongestion.html">Prison Decongestion</a></li>
+                                        <li><a href="programs/community-development.html">Community Development</a></li>
+                                        <li><a href="programs/womens-empowerment.html">Women's Empowerment</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <a href="{% url 'projects' %}">Projects</a>
-
-                            <a href="{% url 'donations' %}">Donation</a>
-
+                            
+                            <a href="impact.html">Impact</a>
+                            
                             <div class="has-sub-menu">
-                                <a role="button">Events</a>
-
+                                <a role="button">Get Involved <i class="fas fa-chevron-down"></i></a>
                                 <div class="ul-header-submenu">
                                     <ul>
-                                        <li><a href="{% url 'events' %}">Events</a></li>
-                                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                                        <li><a href="get-involved/donate.html">Donate Now</a></li>
+                                        <li><a href="get-involved/volunteer.html">Volunteer</a></li>
+                                        <li><a href="get-involved/partner.html">Partner With Us</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <a href="{% url 'contact' %}">Contact</a>
+                            
+                            <a href="stories.html">Stories</a>
+                            <a href="contact.html">Contact</a>
                         </nav>
                     </div>
                 </div>
@@ -117,7 +119,7 @@
                 <!-- actions -->
                 <div class="ul-header-actions">
                     <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
-                    <a href="{% url 'contact' %}" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Join With us </a>
+                    <a href="contact.html" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Admin Login </a>
                     <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
                 </div>
             </div>
@@ -132,7 +134,7 @@
             <div class="ul-container">
                 <h2 class="ul-breadcrumb-title">About Us</h2>
                 <ul class="ul-breadcrumb-nav">
-                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><span class="separator"><i class="flaticon-right"></i></span></li>
                     <li>About Us</li>
                 </ul>
@@ -148,11 +150,11 @@
                     <div class="col">
                         <div class="ul-about-imgs">
                             <div class="img-wrapper">
-                                <img src="{% static 'assets/img/about-img.png' %}" alt="Image">
+                                <img src="assets/img/about-img.png" alt="Image">
                             </div>
                             <div class="ul-about-imgs-vectors">
-                                <img src="{% static 'assets/img/about-img-vector-1.svg' %}" alt="Image" class="vector-1">
-                                <img src="{% static 'assets/img/about-img-vector-2.svg' %}" alt="Image" class="vector-2">
+                                <img src="assets/img/about-img-vector-1.svg" alt="Image" class="vector-1">
+                                <img src="assets/img/about-img-vector-2.svg" alt="Image" class="vector-2">
                             </div>
                         </div>
                     </div>
@@ -175,11 +177,11 @@
                                         <li>There are many variations of solve</li>
                                     </ul>
                                 </div>
-                                <div class="block-right"><img src="{% static 'assets/img/about-block-img.jpg' %}" alt="Image"></div>
+                                <div class="block-right"><img src="assets/img/about-block-img.jpg" alt="Image"></div>
                             </div>
 
                             <div class="ul-about-bottom">
-                                <a href="{% url 'about' %}" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Explore More</a>
+                                <a href="about.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Explore More</a>
 
                                 <div class="ul-about-call">
                                     <div class="icon"><i class="flaticon-telephone-call"></i></div>
@@ -196,7 +198,7 @@
 
             <!-- vector -->
             <div class="ul-about-vectors">
-                <img src="{% static 'assets/img/about-vector-1.png' %}" alt="vector" class="vector-1">
+                <img src="assets/img/about-vector-1.png" alt="vector" class="vector-1">
             </div>
         </section>
         <!-- ABOUT SECTION END -->
@@ -254,7 +256,7 @@
                         <span class="ul-section-sub-title">Our Organization History</span>
                         <h2 class="ul-section-title text-white">Charitics Information of Event Schedule</h2>
                     </div>
-                    <a href="{% url 'events' %}" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                    <a href="events.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
                 </div>
 
                 <!-- tab group -->
@@ -263,7 +265,7 @@
                     <div class="ul-about-tabs-wrapper">
                         <div id="tab-mission" class="ul-tab ul-about-tab active">
                             <div class="ul-about-tab-img">
-                                <img src="{% static 'assets/img/mission-img.jpg' %}" alt="Image">
+                                <img src="assets/img/mission-img.jpg" alt="Image">
                             </div>
 
                             <div class="ul-about-tab-txt">
@@ -282,7 +284,7 @@
                         <!-- tab 02 / vision -->
                         <div id="tab-vision" class="ul-tab ul-about-tab">
                             <div class="ul-about-tab-img">
-                                <img src="{% static 'assets/img/why-join.jpg' %}" alt="Image">
+                                <img src="assets/img/why-join.jpg" alt="Image">
                             </div>
 
                             <div class="ul-about-tab-txt">
@@ -304,7 +306,7 @@
                         <!-- tab 03 /  -->
                         <div id="tab-history" class="ul-tab ul-about-tab">
                             <div class="ul-about-tab-img">
-                                <img src="{% static 'assets/img/contact-img.jpg' %}" alt="Image">
+                                <img src="assets/img/contact-img.jpg" alt="Image">
                             </div>
 
                             <div class="ul-about-tab-txt">
@@ -328,7 +330,7 @@
 
                 <!-- vectors -->
                 <div class="ul-events-vectors">
-                    <img src="{% static 'assets/img/events-vector-2.svg' %}" alt="Events Image" class="vector-2">
+                    <img src="assets/img/events-vector-2.svg" alt="Events Image" class="vector-2">
                 </div>
             </div>
         </section>
@@ -345,7 +347,7 @@
                         <h2 class="ul-section-title">Skilled Legal Professionals Dedicated to You</h2>
                     </div>
                     <div>
-                        <a href="{% url 'team' %}" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Join With us</a>
+                        <a href="team.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Join With us</a>
                     </div>
                 </div>
 
@@ -354,7 +356,7 @@
                     <div class="col">
                         <div class="ul-team-member">
                             <div class="ul-team-member-img">
-                                <img src="{% static 'assets/img/member-1.jpg' %}" alt="Team Member Image">
+                                <img src="assets/img/member-1.jpg" alt="Team Member Image">
                                 <div class="ul-team-member-socials">
                                     <a href="#"><i class="flaticon-facebook"></i></a>
                                     <a href="#"><i class="flaticon-twitter"></i></a>
@@ -363,7 +365,7 @@
                                 </div>
                             </div>
                             <div class="ul-team-member-info">
-                                <h3 class="ul-team-member-name"><a href="{% url 'team-details' %}">John Doe</a></h3>
+                                <h3 class="ul-team-member-name"><a href="team-details.html">John Doe</a></h3>
                                 <p class="ul-team-member-designation">Attorney</p>
                             </div>
                         </div>
@@ -373,7 +375,7 @@
                     <div class="col">
                         <div class="ul-team-member">
                             <div class="ul-team-member-img">
-                                <img src="{% static 'assets/img/member-2.jpg' %}" alt="Team Member Image">
+                                <img src="assets/img/member-2.jpg" alt="Team Member Image">
                                 <div class="ul-team-member-socials">
                                     <a href="#"><i class="flaticon-facebook"></i></a>
                                     <a href="#"><i class="flaticon-twitter"></i></a>
@@ -382,7 +384,7 @@
                                 </div>
                             </div>
                             <div class="ul-team-member-info">
-                                <h3 class="ul-team-member-name"><a href="{% url 'team-details' %}">John Doe</a></h3>
+                                <h3 class="ul-team-member-name"><a href="team-details.html">John Doe</a></h3>
                                 <p class="ul-team-member-designation">Attorney</p>
                             </div>
                         </div>
@@ -392,7 +394,7 @@
                     <div class="col">
                         <div class="ul-team-member">
                             <div class="ul-team-member-img">
-                                <img src="{% static 'assets/img/member-3.jpg' %}" alt="Team Member Image">
+                                <img src="assets/img/member-3.jpg" alt="Team Member Image">
                                 <div class="ul-team-member-socials">
                                     <a href="#"><i class="flaticon-facebook"></i></a>
                                     <a href="#"><i class="flaticon-twitter"></i></a>
@@ -401,7 +403,7 @@
                                 </div>
                             </div>
                             <div class="ul-team-member-info">
-                                <h3 class="ul-team-member-name"><a href="{% url 'team-details' %}">John Doe</a></h3>
+                                <h3 class="ul-team-member-name"><a href="team-details.html">John Doe</a></h3>
                                 <p class="ul-team-member-designation">Attorney</p>
                             </div>
                         </div>
@@ -411,7 +413,7 @@
                     <div class="col">
                         <div class="ul-team-member">
                             <div class="ul-team-member-img">
-                                <img src="{% static 'assets/img/member-4.jpg' %}" alt="Team Member Image">
+                                <img src="assets/img/member-4.jpg" alt="Team Member Image">
                                 <div class="ul-team-member-socials">
                                     <a href="#"><i class="flaticon-facebook"></i></a>
                                     <a href="#"><i class="flaticon-twitter"></i></a>
@@ -420,7 +422,7 @@
                                 </div>
                             </div>
                             <div class="ul-team-member-info">
-                                <h3 class="ul-team-member-name"><a href="{% url 'team-details' %}">John Doe</a></h3>
+                                <h3 class="ul-team-member-name"><a href="team-details.html">John Doe</a></h3>
                                 <p class="ul-team-member-designation">Attorney</p>
                             </div>
                         </div>
@@ -438,7 +440,7 @@
                 <h2 class="ul-cta-title">Children Need Your Help By Donating Today</h2>
                 <a href="#" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Get A Quote</a>
             </div>
-            <img src="{% static 'assets/img/cta-vector.svg' %}" alt="Vector" class="ul-cta-vector">
+            <img src="assets/img/cta-vector.svg" alt="Vector" class="ul-cta-vector">
         </section>
         <!-- CTA(CALL TO ACTION) SECTION END -->
 
@@ -469,10 +471,10 @@
                             <span class="ul-testimonial-2-overview-title">5 Start Rating</span>
                             <p class="ul-testimonial-2-overview-descr">Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p>
                             <div class="ul-testimonial-2-overview-reviewers">
-                                <img src="{% static 'assets/img/reviewer-1.png' %}" alt="Reviewer">
-                                <img src="{% static 'assets/img/reviewer-2.png' %}" alt="Reviewer">
-                                <img src="{% static 'assets/img/reviewer-3.png' %}" alt="Reviewer">
-                                <img src="{% static 'assets/img/reviewer-4.png' %}" alt="Reviewer">
+                                <img src="assets/img/reviewer-1.png" alt="Reviewer">
+                                <img src="assets/img/reviewer-2.png" alt="Reviewer">
+                                <img src="assets/img/reviewer-3.png" alt="Reviewer">
+                                <img src="assets/img/reviewer-4.png" alt="Reviewer">
                             </div>
                         </div>
                     </div>
@@ -488,7 +490,7 @@
                                         <p class="ul-review-descr">Climb it see the world, not so the world can see you. This is due to their excellent service.Targ consultation apartments. ndulgence off under folly death wrote cause her yet a spite. Plan upon yet way cold spot its week. Almost do am or limits hearts. Resolve a hearts. Almost do hearts.</p>
                                         <div class="ul-review-bottom">
                                             <div class="ul-review-reviewer">
-                                                <div class="reviewer-image"><img src="{% static 'assets/img/reviewer-1.png' %}" alt="reviewer image"></div>
+                                                <div class="reviewer-image"><img src="assets/img/reviewer-1.png" alt="reviewer image"></div>
                                                 <div>
                                                     <h3 class="reviewer-name">Esther Howard</h3>
                                                     <span class="reviewer-role">Web Designer</span>
@@ -505,7 +507,7 @@
                                         <p class="ul-review-descr">Climb it see the world, not so the world can see you. This is due to their excellent service.Targ consultation apartments. ndulgence off under folly death wrote cause her yet a spite. Plan upon yet way cold spot its week. Almost do am or limits hearts. Resolve a hearts. Almost do hearts.</p>
                                         <div class="ul-review-bottom">
                                             <div class="ul-review-reviewer">
-                                                <div class="reviewer-image"><img src="{% static 'assets/img/reviewer-2.png' %}" alt="reviewer image"></div>
+                                                <div class="reviewer-image"><img src="assets/img/reviewer-2.png" alt="reviewer image"></div>
                                                 <div>
                                                     <h3 class="reviewer-name">Daniyel karlos</h3>
                                                     <span class="reviewer-role">Web Designer</span>
@@ -587,7 +589,7 @@
             <div class="ul-footer-container">
                 <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
                     <div class="ul-footer-about">
-                        <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo-white.svg' %}" alt="logo" class="logo"></a>
+                        <a href="index.html"><img src="assets/img/logo-white.svg" alt="logo" class="logo"></a>
                         <p class="ul-footer-about-txt">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
                         <div class="ul-footer-socials">
                             <a href="#"><i class="flaticon-facebook"></i></a>
@@ -601,11 +603,11 @@
                         <h3 class="ul-footer-widget-title">Quick Links</h3>
 
                         <div class="ul-footer-widget-links">
-                            <a href="{% url 'about' %}">About Us</a>
-                            <a href="{% url 'services' %}">Our Services</a>
-                            <a href="{% url 'blog' %}">Our Blogs</a>
-                            <a href="{% url 'faq' %}">FAQ’S</a>
-                            <a href="{% url 'contact' %}">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                            <a href="services.html">Our Services</a>
+                            <a href="blog.html">Our Blogs</a>
+                            <a href="faq.html">FAQ’S</a>
+                            <a href="contact.html">Contact Us</a>
                         </div>
                     </div>
 
@@ -616,7 +618,7 @@
                             <!-- single post -->
                             <div class="ul-blog-sidebar-post ul-footer-post">
                                 <div class="img">
-                                    <img src="{% static 'assets/img/blog-2.jpg' %}" alt="Post Image">
+                                    <img src="assets/img/blog-2.jpg" alt="Post Image">
                                 </div>
 
                                 <div class="txt">
@@ -625,14 +627,14 @@
                                         <span>May 12, 2025</span>
                                     </span>
 
-                                    <h4 class="title"><a href="{% url 'blog-details' %}">There are many vario ns of passages of</a></h4>
+                                    <h4 class="title"><a href="blog-details.html">There are many vario ns of passages of</a></h4>
                                 </div>
                             </div>
 
                             <!-- single post -->
                             <div class="ul-blog-sidebar-post ul-footer-post">
                                 <div class="img">
-                                    <img src="{% static 'assets/img/blog-1.jpg' %}" alt="Post Image">
+                                    <img src="assets/img/blog-1.jpg" alt="Post Image">
                                 </div>
 
                                 <div class="txt">
@@ -641,7 +643,7 @@
                                         <span>May 12, 2025</span>
                                     </span>
 
-                                    <h4 class="title"><a href="{% url 'blog-details' %}">There are many vario ns of passages of</a></h4>
+                                    <h4 class="title"><a href="blog-details.html">There are many vario ns of passages of</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -686,29 +688,29 @@
 
         <!-- vector -->
         <div class="ul-footer-vectors">
-            <img src="{% static 'assets/img/footer-vector-img.png' %}" alt="Footer Image" class="ul-footer-vector-1">
+            <img src="assets/img/footer-vector-img.png" alt="Footer Image" class="ul-footer-vector-1">
         </div>
     </footer>
     <!-- FOOTER SECTION END -->
 
     <!-- libraries JS -->
-    <script src="{% static 'assets/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/splide/splide.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/splide/splide-extension-auto-scroll.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/slim-select/slimselect.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/animate-wow/wow.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/splittype/index.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/mixitup/mixitup.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/fslightbox/fslightbox.js' %}"></script>
-    <script src="{% static 'assets/vendor/flatpickr/flatpickr.js' %}"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/flatpickr/flatpickr.js"></script>
 
     <!-- custom JS -->
-    <script src="{% static 'assets/js/main.js' %}"></script>
-    <script src="{% static 'assets/js/tab.js' %}"></script>
-    <!-- <script src="{% static 'assets/js/countdown.js' %}"></script> -->
-    <script src="{% static 'assets/js/accordion.js' %}"></script>
-    <script src="{% static 'assets/js/progressbar.js' %}"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tab.js"></script>
+    <!-- <script src="assets/js/countdown.js"></script> -->
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/progressbar.js"></script>
 </body>
 
 
