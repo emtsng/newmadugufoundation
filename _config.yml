@@ -1,0 +1,40 @@
+# Site settings
+title: Madugu Foundation
+description: >-
+  Madugu Foundation - Making a difference through community service and empowerment
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://madugufoundation.org" # the base hostname & protocol for your site
+email: contact@madugufoundation.org
+twitter_username: madugufoundation
+github_username: madugufoundation
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+  - .gitignore
+
+# Collections
+collections:
+  team:
+    output: true
+    permalink: /team/:path/
+  services:
+    output: true
+    permalink: /services/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  events:
+    output: true
+    permalink: /events/:path/
