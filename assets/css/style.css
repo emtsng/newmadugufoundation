@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!--------------------
-Template Name: Charitics - NGO & Non Profit HTML Template
+Template Name: Madugu Jaji Sambo Foundation - NGO & Non Profit HTML Template
 Author: tempticspro
 Version: 1.0
 
@@ -132,6 +132,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 /* clears the ‘X’ from Chrome */
@@ -412,13 +413,7 @@ button {
   margin-bottom: clamp(11px, 0.74vw, 14px);
 }
 .ul-section-sub-title::before {
-  content: "";
-  width: clamp(9px, 0.63vw, 12px);
-  aspect-ratio: 12/13;
-  background-color: var(--ul-primary);
-  display: inline-block;
-  margin-right: clamp(5px, 0.42vw, 8px);
-  clip-path: polygon(50.201% 100%, 50.201% 100%, 43.516% 92.661%, 36.628% 85.05%, 29.752% 77.216%, 23.104% 69.205%, 16.897% 61.063%, 11.346% 52.837%, 6.666% 44.574%, 3.072% 36.321%, 0.778% 28.124%, 0% 20.03%, 0% 20.03%, 1.021% 13.336%, 3.769% 7.773%, 7.928% 3.553%, 13.18% 0.892%, 19.207% 0.001%, 25.692% 1.095%, 32.318% 4.387%, 38.766% 10.091%, 44.72% 18.419%, 49.862% 29.586%, 49.862% 29.586%, 50.588% 26.97%, 51.54% 24.272%, 52.71% 21.543%, 54.089% 18.832%, 55.67% 16.19%, 57.445% 13.667%, 59.404% 11.313%, 61.541% 9.179%, 63.846% 7.315%, 66.312% 5.771%, 66.312% 5.771%, 72.015% 3.441%, 77.848% 2.358%, 83.531% 2.515%, 88.788% 3.906%, 93.341% 6.524%, 96.913% 10.364%, 99.224% 15.42%, 99.998% 21.685%, 98.956% 29.153%, 95.822% 37.818%, 95.822% 37.818%, 93.578% 42.409%, 90.817% 47.291%, 87.538% 52.49%, 83.744% 58.034%, 79.435% 63.947%, 74.612% 70.258%, 69.276% 76.993%, 63.428% 84.177%, 57.069% 91.837%, 50.201% 100%);
+  display: none;
 }
 .ul-section-sub-title--2 i:last-child {
   display: none;
@@ -1121,7 +1116,7 @@ button {
   right: -19px;
   top: 50%;
   transform: translateY(-50%);
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -1678,7 +1673,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(101.64deg, rgba(235, 83, 16, 0.9) 1.87%, rgba(235, 83, 16, 0.1) 98.72%);
+  background: linear-gradient(101.64deg, rgba(133, 140, 36, 0.9) 1.87%, rgba(235, 83, 16, 0.1) 98.72%);
   pointer-events: none;
 }
 .ul-banner-2-slide-bg-img {
@@ -1697,7 +1692,7 @@ button {
   color: var(--white);
 }
 .ul-banner-2-slide .ul-banner-sub-title::before {
-  background-color: var(--white);
+  display: none;
 }
 .ul-banner-2-slide .ul-banner-title {
   line-height: 1.2;
@@ -1778,7 +1773,7 @@ button {
 }
 .ul-about-block .block-list li:before {
   content: "\f106";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -3355,7 +3350,7 @@ button {
 }
 .ul-footer-widget-links > *::before {
   content: "\f104";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -3580,7 +3575,7 @@ button {
 }
 .ul-volunteer-list li::before {
   content: "\f106";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -4165,7 +4160,7 @@ button {
 }
 .ul-service-details ul li::before {
   content: "\f139";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -4383,7 +4378,7 @@ button {
 }
 .ul-donation-details-summary-txt ul li::before {
   content: "\f139";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -4493,7 +4488,7 @@ button {
 .ul-event-details-list li::before,
 .ul-event-details ul li::before {
   content: "\f139";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -5001,7 +4996,7 @@ button {
 }
 .ul-pricing-package-body-list li::before {
   content: "\f139";
-  font-family: flaticon_charitics !important;
+  font-family: flaticon_Madugu Jaji Sambo Foundation !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;

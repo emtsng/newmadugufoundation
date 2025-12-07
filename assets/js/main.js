@@ -877,7 +877,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         spaceBetween: 10,
         slideToClickedSlide: true,
         loop: true,
-        autoplay: true,
+        autoplay: {
+            delay: 3000,
+        },
         speed: 1000,
         centeredSlides: true
     });
@@ -885,7 +887,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const bannerSlider = new Swiper(".ul-banner-2-slider", {
         slidesPerView: 1,
         loop: true,
-        autoplay: true,
+        autoplay: {
+            delay: 3000,
+        },
         spaceBetween: 0,
         speed: 1000,
         navigation: {

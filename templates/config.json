@@ -1,0 +1,88 @@
+{
+  "site_name": "Madugu Jaji Sambo Foundation",
+  "site_description": "Madugu Jaji Sambo Foundation is a non-profit organization dedicated to empowering the less privileged and creating a more just and equitable world through education, water access, prison reform, and community development.",
+  "contact_info": {
+    "address": "Plot 1015, Fria Close Gwandal Centre, Wuse II, Abuja",
+    "email": "info@madugufoundation.com",
+    "phone": "Contact Us"
+  },
+  "social_links": {
+    "facebook": "#",
+    "twitter": "#",
+    "instagram": "#",
+    "youtube": "#",
+    "linkedin": "#"
+  },
+  "navigation": {
+    "main": [
+      {
+        "title": "Home",
+        "url": "index.html",
+        "page": "index"
+      },
+      {
+        "title": "About Us",
+        "url": "about.html",
+        "page": "about"
+      },
+      {
+        "title": "Our Programs",
+        "url": "#",
+        "page": "programs",
+        "submenu": [
+          {
+            "title": "Orphan Education",
+            "url": "programs/orphan-education.html"
+          },
+          {
+            "title": "Prison Decongestion",
+            "url": "programs/prison-decongestion.html"
+          },
+          {
+            "title": "Community Development",
+            "url": "programs/community-development.html"
+          },
+          {
+            "title": "Women's Empowerment",
+            "url": "programs/womens-empowerment.html"
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "url": "impact.html",
+        "page": "impact"
+      },
+      {
+        "title": "Get Involved",
+        "url": "#",
+        "page": "get-involved",
+        "submenu": [
+          {
+            "title": "Donate Now",
+            "url": "get-involved/donate.html"
+          },
+          {
+            "title": "Volunteer",
+            "url": "get-involved/volunteer.html"
+          },
+          {
+            "title": "Partner With Us",
+            "url": "get-involved/partner.html"
+          }
+        ]
+      },
+      {
+        "title": "Stories",
+        "url": "stories.html",
+        "page": "stories"
+      },
+      {
+        "title": "Contact",
+        "url": "contact.html",
+        "page": "contact"
+      }
+    ]
+  }
+}
+

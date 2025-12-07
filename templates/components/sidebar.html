@@ -1,0 +1,29 @@
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="<%= @base_path %>index.html">
+                    <img src="<%= @base_path %>../assets/img/logo.webp" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Follow us</span>
+
+            <div class="ul-sidebar-footer-social">
+                <% if @social_links['facebook'] %><a href="<%= @social_links['facebook'] %>"><i class="flaticon-facebook"></i></a><% end %>
+                <% if @social_links['twitter'] %><a href="<%= @social_links['twitter'] %>"><i class="flaticon-twitter"></i></a><% end %>
+                <% if @social_links['instagram'] %><a href="<%= @social_links['instagram'] %>"><i class="flaticon-instagram"></i></a><% end %>
+                <% if @social_links['youtube'] %><a href="<%= @social_links['youtube'] %>"><i class="flaticon-youtube"></i></a><% end %>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+

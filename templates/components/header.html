@@ -1,0 +1,58 @@
+    <!-- HEADER SECTION START -->
+    <header class="ul-header <%= @header_class %>">
+        <div class="ul-header-bottom to-be-sticky">
+            <div class="ul-header-bottom-wrapper ul-header-container">
+                <div class="logo-container">
+                    <a href="<%= @base_path %>index.html" class="d-inline-block"><img src="<%= @base_path %>../assets/img/logo.webp" alt="logo" class="logo"></a>
+                </div>
+
+                <!-- header nav -->
+                <div class="ul-header-nav-wrapper">
+                    <div class="to-go-to-sidebar-in-mobile">
+                        <nav class="ul-header-nav">
+                            <a href="<%= @base_path %>index.html" <% if @current_page == 'index' %>class="active"<% end %>>Home</a>
+                            
+                            <a href="<%= @base_path %>about.html" <% if @current_page == 'about' %>class="active"<% end %>>About Us</a>
+                            
+                            <div class="has-sub-menu">
+                                <a role="button">Our Programs <i class="fas fa-chevron-down"></i></a>
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="<%= @base_path %>programs/orphan-education.html">Education</a></li>
+                                        <li><a href="<%= @base_path %>programs/prison-decongestion.html">Prison Decongestion & Reintegration</a></li>
+                                        <li><a href="<%= @base_path %>programs/community-development.html">Water and Sanitation</a></li>
+                                        <li><a href="<%= @base_path %>programs/womens-empowerment.html">Community Development</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <a href="<%= @base_path %>impact.html" <% if @current_page == 'impact' %>class="active"<% end %>>Impact</a>
+                            
+                            <div class="has-sub-menu">
+                                <a role="button">Get Involved <i class="fas fa-chevron-down"></i></a>
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="<%= @base_path %>get-involved/donate.html">Donate Now</a></li>
+                                        <li><a href="<%= @base_path %>get-involved/volunteer.html">Volunteer</a></li>
+                                        <li><a href="<%= @base_path %>get-involved/partner.html">Partner With Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <a href="<%= @base_path %>stories.html" <% if @current_page == 'stories' %>class="active"<% end %>>Stories</a>
+                            <a href="<%= @base_path %>contact.html" <% if @current_page == 'contact' %>class="active"<% end %>>Contact</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- actions -->
+                <div class="ul-header-actions">
+                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
+                    <a href="<%= @base_path %>#" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Admin Login </a>
+                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+

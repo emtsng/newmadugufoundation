@@ -1,0 +1,160 @@
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer">
+        <div class="ul-footer-top">
+            <div class="ul-footer-container">
+                <div class="ul-footer-top-contact-infos">
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon">
+                            <div class="ul-footer-top-contact-info-icon-inner">
+                                <i class="flaticon-pin"></i>
+                            </div>
+                        </div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Address</span>
+                            <h5 class="ul-footer-top-contact-info-address"><%= @contact_info['address'] %></h5>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon">
+                            <div class="ul-footer-top-contact-info-icon-inner">
+                                <i class="flaticon-email"></i>
+                            </div>
+                        </div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Send Email</span>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="mailto:<%= @contact_info['email'] %>"><%= @contact_info['email'] %></a></h5>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon">
+                            <div class="ul-footer-top-contact-info-icon-inner">
+                                <i class="flaticon-telephone-call-1"></i>
+                            </div>
+                        </div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Call Emergency</span>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="tel:<%= @contact_info['phone'] %>"><%= @contact_info['phone'] %></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ul-footer-middle">
+            <div class="ul-footer-container">
+                <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
+                    <div class="ul-footer-about">
+                        <a href="<%= @base_path %>index.html"><img src="<%= @base_path %>../assets/img/logo.webp" alt="logo" class="logo"></a>
+                        <p class="ul-footer-about-txt"><%= @site_description %></p>
+                        <div class="ul-footer-socials">
+                            <% if @social_links['facebook'] %><a href="<%= @social_links['facebook'] %>"><i class="flaticon-facebook"></i></a><% end %>
+                            <% if @social_links['twitter'] %><a href="<%= @social_links['twitter'] %>"><i class="flaticon-twitter"></i></a><% end %>
+                            <% if @social_links['linkedin'] %><a href="<%= @social_links['linkedin'] %>"><i class="flaticon-linkedin-big-logo"></i></a><% end %>
+                            <% if @social_links['youtube'] %><a href="<%= @social_links['youtube'] %>"><i class="flaticon-youtube"></i></a><% end %>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget">
+                        <h3 class="ul-footer-widget-title">Quick Links</h3>
+
+                        <div class="ul-footer-widget-links">
+                            <a href="<%= @base_path %>about.html">About Us</a>
+                            <a href="<%= @base_path %>services.html">Our Programs</a>
+                            <a href="<%= @base_path %>blog.html">Our Blogs</a>
+                            <a href="<%= @base_path %>faq.html">FAQ'S</a>
+                            <a href="<%= @base_path %>contact.html">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget ul-footer-recent-posts">
+                        <h3 class="ul-footer-widget-title">Recent Posts</h3>
+
+                        <div class="ul-blog-sidebar-posts">
+                            <!-- single post -->
+                            <div class="ul-blog-sidebar-post ul-footer-post">
+                                <div class="img">
+                                    <img src="<%= @base_path %>../assets/img/blog-2.jpg" alt="Post Image">
+                                </div>
+
+                                <div class="txt">
+                                    <span class="date">
+                                        <span class="icon"><i class="flaticon-calendar"></i></span>
+                                        <span>May 12, 2025</span>
+                                    </span>
+
+                                    <h4 class="title"><a href="<%= @base_path %>blog-details.html">50 Individuals Freed Through Prison Decongestion Initiative</a></h4>
+                                </div>
+                            </div>
+
+                            <!-- single post -->
+                            <div class="ul-blog-sidebar-post ul-footer-post">
+                                <div class="img">
+                                    <img src="<%= @base_path %>../assets/img/blog-1.jpg" alt="Post Image">
+                                </div>
+
+                                <div class="txt">
+                                    <span class="date">
+                                        <span class="icon"><i class="flaticon-calendar"></i></span>
+                                        <span>May 12, 2025</span>
+                                    </span>
+
+                                    <h4 class="title"><a href="<%= @base_path %>blog-details.html">264 Children Receive Quality Education Through Our Scholarship Program</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget ul-nwsltr-widget">
+                        <h3 class="ul-footer-widget-title">Contact Us</h3>
+                        <div class="ul-footer-widget-links ul-footer-contact-links">
+                            <a href="mailto:<%= @contact_info['email'] %>"><i class="flaticon-mail"></i> <%= @contact_info['email'] %></a>
+                            <a href="tel:<%= @contact_info['phone'] %>"><i class="flaticon-telephone-call"></i> <%= @contact_info['phone'] %></a>
+                        </div>
+                        <form action="#" class="ul-nwsltr-form">
+                            <div class="top">
+                                <input type="email" name="email" id="nwsltr-email" placeholder="Your Email Address" class="ul-nwsltr-input">
+                                <button type="submit"><i class="flaticon-next"></i></button>
+                            </div>
+
+                            <div class="agreement">
+                                <label for="nwsltr-agreement" class="ul-checkbox-wrapper">
+                                    <input type="checkbox" name="agreement" id="nwsltr-agreement" hidden>
+                                    <span class="ul-checkbox"><i class="flaticon-tick"></i></span>
+                                    <span class="ul-checkbox-txt">I agree with the <a href="#">Privacy Policy</a></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="ul-footer-bottom">
+            <div class="ul-footer-container">
+                <div class="ul-footer-bottom-wrapper">
+                    <p class="copyright-txt">&copy;
+                        <span id="footer-copyright-year"></span> <%= @site_name %>. All rights reserved
+                    </p>
+                    <div class="ul-footer-bottom-nav"><a href="#">Terms & Conditions</a> <a href="#">Privacy Policy</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- vector -->
+        <div class="ul-footer-vectors">
+            <img src="<%= @base_path %>../assets/img/footer-vector-img.png" alt="Footer Image" class="ul-footer-vector-1">
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->

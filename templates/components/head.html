@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= @page_title %> - <%= @site_name %></title>
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="<%= @base_path %>../assets/icon/flaticon_charitics.css">
+    <link rel="stylesheet" href="<%= @base_path %>../assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="<%= @base_path %>../assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="<%= @base_path %>../assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<%= @base_path %>../assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="<%= @base_path %>../assets/vendor/animate-wow/animate.min.css">
+    <link rel="stylesheet" href="<%= @base_path %>../assets/vendor/flatpickr/flatpickr.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="<%= @base_path %>../assets/css/style.css">
+    <% if @extra_css && !@extra_css.empty? %>
+    <!-- Additional CSS -->
+    <% @extra_css.each do |css| %>
+    <link rel="stylesheet" href="<%= @base_path %><%= css %>">
+    <% end %>
+    <% end %>
+</head>
+
