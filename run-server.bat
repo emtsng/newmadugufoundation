@@ -4,10 +4,10 @@ echo Starting Local Web Server
 echo ==========================================
 echo.
 echo Server will be available at:
-echo   http://localhost:8000/pages/index.html
-echo   http://localhost:8000/pages/about.html
-echo   http://localhost:8000/pages/contact.html
-echo   (and other HTML files in pages/ directory)
+echo   http://localhost:8000/index.html
+echo   http://localhost:8000/about.html
+echo   http://localhost:8000/contact.html
+echo   (and other HTML files in root directory)
 echo.
 echo Press Ctrl+C to stop the server
 echo ==========================================

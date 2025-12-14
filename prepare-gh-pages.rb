@@ -8,10 +8,10 @@ require 'fileutils'
 require 'pathname'
 
 class GitHubPagesPreparer
-  def initialize(source_dir: 'pages', output_dir: '_site', assets_dir: 'assets')
-    @source_dir = Pathname.new(source_dir)
+  def initialize(output_dir: '_site', assets_dir: 'assets')
     @output_dir = Pathname.new(output_dir)
     @assets_dir = Pathname.new(assets_dir)
+    @root_dir = Pathname.new('.')
   end
 
   def prepare
@@ -21,23 +21,34 @@ class GitHubPagesPreparer
     FileUtils.rm_rf(@output_dir) if @output_dir.exist?
     @output_dir.mkpath
     
-    # Copy all pages to root of output directory (not as a subdirectory)
-    puts "Copying pages..."
-    if @source_dir.exist?
-      # Copy each file/directory from pages/ directly to _site/ root
-      @source_dir.children.each do |item|
-        dest = @output_dir / item.basename
-        if item.directory?
-          FileUtils.cp_r(item, dest)
-        else
-          FileUtils.cp(item, dest)
-        end
-      end
-      puts "  ✓ Copied pages from #{@source_dir} to #{@output_dir} root"
-    else
-      puts "  ✗ Error: Source directory #{@source_dir} does not exist"
-      return false
+    # Copy all HTML files and subdirectories from root to output directory
+    puts "Copying HTML files and directories..."
+    copied_count = 0
+    
+    # Copy HTML files from root
+    @root_dir.glob('*.html').each do |html_file|
+      next if html_file.basename.to_s.start_with?('_') # Skip files starting with _
+      dest = @output_dir / html_file.basename
+      FileUtils.cp(html_file, dest)
+      copied_count += 1
     end
+    
+    # Copy subdirectories that contain HTML files (programs, get-involved, etc.)
+    @root_dir.children.select(&:directory?).each do |dir|
+      dir_name = dir.basename.to_s
+      # Skip hidden directories and common build/output directories
+      next if dir_name.start_with?('.') || dir_name == '_site' || dir_name == 'assets' || 
+              dir_name == 'templates' || dir_name == 'pages-content' || dir_name == 'node_modules'
+      
+      # Check if directory contains HTML files
+      if dir.glob('**/*.html').any?
+        dest = @output_dir / dir_name
+        FileUtils.cp_r(dir, dest)
+        puts "  ✓ Copied directory: #{dir_name}/"
+      end
+    end
+    
+    puts "  ✓ Copied #{copied_count} HTML files from root to #{@output_dir}"
     
     # Copy assets directory
     puts "Copying assets..."

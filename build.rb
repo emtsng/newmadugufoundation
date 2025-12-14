@@ -24,13 +24,12 @@ class TemplateEngine
   end
 
   def calculate_base_path(output_path)
-    # Calculate depth from pages directory
-    # Files in pages/ need ../ to get to root (for assets)
-    # Files in pages/subdir/ need ../../ to get to root
-    # For page links within pages/, we use relative paths
+    # Calculate depth from root directory
+    # Files in root need no prefix (assets/)
+    # Files in subdir/ need ../ to get to root (../assets/)
+    # Files in subdir/nested/ need ../../ to get to root (../../assets/)
     depth = output_path.parent.to_s.split(File::SEPARATOR).reject(&:empty?).length
-    # Subtract 1 because we're already in pages/ directory
-    depth = [depth - 1, 0].max
+    # Files in root have depth 0
     return '' if depth <= 0
     
     '../' * depth
@@ -62,8 +61,8 @@ class TemplateEngine
 
     template_content = File.read(base_template_path)
 
-    # Determine output path - pages go to pages/ directory
-    output_path = @output_dir / 'pages' / page_file
+    # Determine output path - pages go to root directory
+    output_path = @output_dir / page_file
     output_path.parent.mkpath
 
     # Calculate base path for assets

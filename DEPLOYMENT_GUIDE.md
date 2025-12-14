@@ -1,69 +1,34 @@
-# GitHub Pages Deployment Guide
+# GitHub Pages Deployment - FIXED ✅
 
-## ✅ Current Status
-
-Your site is deployed but files are in the wrong location:
-- ❌ Files are at: `https://madugufoundation.com/pages/index.html` (works)
-- ✅ Should be at: `https://madugufoundation.com/` (404 error)
+## The Problem (SOLVED)
+Files were being deployed to `/pages/` subdirectory instead of root.
 
 ## The Fix
+Updated `prepare-gh-pages.rb` to explicitly copy files from `pages/` directory directly to `_site/` root (not as a subdirectory).
 
-The workflow has been updated to ensure files deploy to root. After pushing, the site will work at the root URL.
+## Verification
+- ✅ `_site/index.html` exists in root
+- ✅ No `_site/pages/` subdirectory
+- ✅ All HTML files in root of `_site/`
 
-## Quick Steps
+## Deploy Now
 
-1. **Commit and push the updated workflow:**
+1. **Commit and push:**
    ```bash
    git add .
-   git commit -m "Fix deployment - ensure files go to root"
+   git commit -m "Fix: Copy pages to root, not subdirectory"
    git push origin master
    ```
 
-2. **Wait for workflow to complete:**
-   - Go to **Actions** tab
-   - Wait for "Deploy to GitHub Pages" to finish (green checkmark)
+2. **Wait for workflow** (1-2 minutes)
 
-3. **Test your site:**
-   - `https://madugufoundation.com/` should work
-   - Wait 5-10 minutes if it doesn't (cache)
+3. **Test:** `https://madugufoundation.com/` should work!
 
-## What Was Fixed
-
-- ✅ Workflow now verifies `index.html` is in root of `_site/`
-- ✅ Added checks to ensure no `pages/` subdirectory is created
-- ✅ Better error messages if something goes wrong
-
-## Troubleshooting
-
-### If site still shows 404:
-
-1. **Check workflow logs:**
-   - Actions → Latest run → "Verify deployment structure"
-   - Should show: "✅ index.html found in root"
-
-2. **Clear cache:**
-   - Hard refresh: `Ctrl+F5` (Windows) or `Cmd+Shift+R` (Mac)
-   - Or wait 5-10 minutes
-
-3. **Test GitHub Pages URL:**
-   - Try: `https://emtsng.github.io/newmadugufoundation/`
-   - If this works → Custom domain issue
-   - If this doesn't work → Check workflow logs
-
-## DNS Configuration
-
-Your Cloudflare DNS needs:
-- **A records** for `madugufoundation.com` → GitHub IPs (already correct)
-- **CNAME** for `www` → `emtsng.github.io` (fix if needed)
-
-## After Deployment
-
-Once the workflow completes:
-- ✅ `https://madugufoundation.com/` will work
-- ✅ All pages will be accessible from root
-- ✅ Assets will load correctly
+## What Changed
+- Fixed `prepare-gh-pages.rb` to copy files directly to root
+- Files now deploy to root instead of `/pages/` subdirectory
+- Verified locally: `_site/index.html` is in root ✅
 
 ---
 
-**Next Step:** Commit and push the changes, then wait for the workflow to complete!
-
+**After pushing, your site will work at the root URL!**
