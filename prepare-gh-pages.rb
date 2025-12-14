@@ -21,11 +21,19 @@ class GitHubPagesPreparer
     FileUtils.rm_rf(@output_dir) if @output_dir.exist?
     @output_dir.mkpath
     
-    # Copy all pages to root of output directory
+    # Copy all pages to root of output directory (not as a subdirectory)
     puts "Copying pages..."
     if @source_dir.exist?
-      FileUtils.cp_r(@source_dir.children, @output_dir)
-      puts "  ✓ Copied pages from #{@source_dir} to #{@output_dir}"
+      # Copy each file/directory from pages/ directly to _site/ root
+      @source_dir.children.each do |item|
+        dest = @output_dir / item.basename
+        if item.directory?
+          FileUtils.cp_r(item, dest)
+        else
+          FileUtils.cp(item, dest)
+        end
+      end
+      puts "  ✓ Copied pages from #{@source_dir} to #{@output_dir} root"
     else
       puts "  ✗ Error: Source directory #{@source_dir} does not exist"
       return false

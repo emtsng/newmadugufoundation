@@ -43,11 +43,52 @@ jobs:
             exit 1
           fi
           
+          # Verify index.html exists
+          if [ ! -f "_site/index.html" ]; then
+            echo "Error: index.html not found in _site directory"
+            exit 1
+          fi
+          
+          # List files in _site for debugging
+          echo "Files in _site directory:"
+          ls -la _site/ | head -20
+          
+          echo "Verifying index.html exists:"
+          ls -la _site/index.html
+          
           echo "Site prepared successfully!"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Verify deployment structure
+        run: |
+          echo "=== Verifying _site structure ==="
+          echo "Files in root of _site:"
+          ls -la _site/*.html | head -10
+          echo ""
+          echo "=== Verifying index.html exists in root ==="
+          if [ -f "_site/index.html" ]; then
+            echo "✅ index.html found in root"
+            ls -lh _site/index.html
+          else
+            echo "❌ ERROR: index.html NOT in root!"
+            echo "Contents of _site:"
+            ls -la _site/
+            exit 1
+          fi
+          echo ""
+          echo "=== Verifying CNAME ==="
+          cat _site/CNAME || echo "CNAME not found"
+          echo ""
+          echo "=== Verifying no 'pages' subdirectory ==="
+          if [ -d "_site/pages" ]; then
+            echo "⚠️  WARNING: _site/pages directory exists (should not)"
+            ls -la _site/pages/ | head -5
+          else
+            echo "✅ No pages subdirectory (correct)"
+          fi
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
