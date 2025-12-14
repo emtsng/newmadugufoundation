@@ -48,6 +48,7 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+_site/
 
 # Logs
 *.log
